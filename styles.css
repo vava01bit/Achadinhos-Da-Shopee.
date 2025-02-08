@@ -38,3 +38,8 @@ button {
     padding: 10px;
     cursor: pointer;
 }
+.logo {
+    display: block;
+    width: 100px; /* Ajuste o tamanho */
+    margin: 20px auto; /* Centraliza */
+}
