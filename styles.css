@@ -20,6 +20,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 /* Barra de pesquisa */
@@ -100,11 +101,11 @@ button:hover {
 .logo-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
 }
 
 .logo {
-    width: 120px; /* Tamanho menor da logo */
+    width: 80px; /* Tamanho reduzido */
     height: auto;
     max-width: 100%; /* Garante que não estique */
 }
