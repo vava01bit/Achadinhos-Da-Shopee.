@@ -1,18 +1,18 @@
-/* Reset de estilos */
+/* 🔥 Reset do estilo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* 🔥 Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #fff;
 }
 
-/* Cabeçalho */
+/* 🔥 Cabeçalho */
 header {
     background-color: #ff5a00;
     color: white;
@@ -20,7 +20,7 @@ header {
     text-align: center;
 }
 
-/* Barra de pesquisa */
+/* 🔍 Barra de pesquisa */
 .search-container {
     display: flex;
     justify-content: center;
@@ -48,12 +48,7 @@ header {
     padding: 5px;
 }
 
-.search-button img {
-    width: 20px;
-    height: 20px;
-}
-
-/* Lista de produtos */
+/* 🔥 Estilo dos produtos */
 #product-list {
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +56,6 @@ header {
     margin-top: 20px;
 }
 
-/* Estilização dos produtos */
 .product {
     border: 1px solid #ddd;
     margin: 10px;
@@ -79,7 +73,7 @@ header {
     object-fit: contain;
 }
 
-/* Botões */
+/* 🔥 Botão de compra */
 button {
     background-color: #ff5a00;
     color: white;
@@ -94,7 +88,7 @@ button:hover {
     background-color: #e04a00;
 }
 
-/* 🔥 Correção definitiva do tamanho da logo 🔥 */
+/* 🔥 Correção do tamanho da logo */
 .logo-container {
     display: flex;
     justify-content: center;
@@ -104,8 +98,7 @@ button:hover {
 .logo {
     width: 80px !important;  /* Garante que a largura seja aplicada */
     height: auto !important;
-    max-width: 100px !important; /* Garante um limite máximo */
+    max-width: 100px !important; /* Limite máximo */
     display: block;
 }
-
 
