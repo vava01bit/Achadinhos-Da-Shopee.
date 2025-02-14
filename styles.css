@@ -1,4 +1,11 @@
-/* Reset básico */
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -56,7 +63,7 @@ header {
     margin-top: 20px;
 }
 
-/* Estilo de cada produto */
+/* Estilização dos produtos */
 .product {
     border: 1px solid #ddd;
     margin: 10px;
@@ -74,7 +81,7 @@ header {
     object-fit: contain;
 }
 
-/* Botão de compra */
+/* Botões */
 button {
     background-color: #ff5a00;
     color: white;
@@ -89,7 +96,7 @@ button:hover {
     background-color: #e04a00;
 }
 
-/* Estilizando a logo para corrigir o tamanho */
+/* Ajuste da logo */
 .logo-container {
     display: flex;
     justify-content: center;
@@ -97,7 +104,8 @@ button:hover {
 }
 
 .logo {
-    width: 80px;  /* Ajuste do tamanho da logo */
+    width: 120px; /* Tamanho menor da logo */
     height: auto;
-    display: block;
+    max-width: 100%; /* Garante que não estique */
 }
+
