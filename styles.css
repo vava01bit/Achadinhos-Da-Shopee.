@@ -43,3 +43,13 @@ button {
     width: 100px; /* Ajuste o tamanho */
     margin: 20px auto; /* Centraliza */
 }
+#searchBar {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
