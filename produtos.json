@@ -2,19 +2,19 @@
     {
         "name": "Fritadeira a ar",
         "preço": "R$ 239,90",
-        "imagem": "https://raw.githubusercontent.com/vava01bit/Achadinhos-Da-Shopee/main/airfryer.jpg",
+        "imagem": "https://raw.githubusercontent.com/vava01bit/Achadinhos-Da-Shopee./main/airfryer.jpg",
         "link": "https://s.shopee.com.br/10o3aeXgF2"
     },
     {
         "name": "Fone De Ouvido Bluetooth",
         "preço": "R$ 31,90",
-        "imagem": "https://raw.githubusercontent.com/vava01bit/Achadinhos-Da-Shopee/main/headphone.jpg",
+        "imagem": "https://raw.githubusercontent.com/vava01bit/Achadinhos-Da-Shopee./main/fone-bluetooth.jpg",
         "link": "https://s.shopee.com.br/7peNun8AxO"
     },
     {
         "name": "Caixa de Som",
         "preço": "R$ 109,99",
-        "imagem": "https://raw.githubusercontent.com/vava01bit/Achadinhos-Da-Shopee/main/caixa-de-som.jpg",
+        "imagem": "https://raw.githubusercontent.com/vava01bit/Achadinhos-Da-Shopee./main/caixa-de-som.jpg",
         "link": "https://s.shopee.com.br/10nykMC1Lg"
     }
 ]
