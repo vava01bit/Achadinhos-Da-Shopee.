@@ -1,3 +1,4 @@
+/* Reset básico */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,6 +7,7 @@ body {
     background-color: #fff;
 }
 
+/* Cabeçalho */
 header {
     background-color: #ff5a00;
     color: white;
@@ -13,7 +15,7 @@ header {
     text-align: center;
 }
 
-/* 🔍 Estilo da Barra de Pesquisa */
+/* Barra de pesquisa */
 .search-container {
     display: flex;
     justify-content: center;
@@ -32,14 +34,13 @@ header {
     font-size: 16px;
     border: none;
     outline: none;
-    border-radius: 25px;
 }
 
 .search-button {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
 }
 
 .search-button img {
@@ -47,7 +48,7 @@ header {
     height: 20px;
 }
 
-/* 📦 Estilo dos Produtos */
+/* Lista de produtos */
 #product-list {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +56,7 @@ header {
     margin-top: 20px;
 }
 
+/* Estilo de cada produto */
 .product {
     border: 1px solid #ddd;
     margin: 10px;
@@ -72,7 +74,7 @@ header {
     object-fit: contain;
 }
 
-/* 🛒 Botão de Compra */
+/* Botão de compra */
 button {
     background-color: #ff5a00;
     color: white;
@@ -87,7 +89,7 @@ button:hover {
     background-color: #e04a00;
 }
 
-/* 🛍️ Logo Centralizada */
+/* Estilizando a logo para corrigir o tamanho */
 .logo-container {
     display: flex;
     justify-content: center;
@@ -95,7 +97,7 @@ button:hover {
 }
 
 .logo {
-    width: 100px;  /* Ajuste do tamanho */
+    width: 80px;  /* Ajuste do tamanho da logo */
     height: auto;
+    display: block;
 }
-
