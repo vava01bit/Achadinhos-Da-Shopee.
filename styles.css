@@ -102,11 +102,10 @@ button:hover {
 }
 
 .logo {
-    width: 80px; /* TAMANHO FIXO E REDUZIDO */
-    height: auto;
-    max-width: 100%;
+    width: 80px !important;  /* Garante que a largura seja aplicada */
+    height: auto !important;
+    max-width: 100px !important; /* Garante um limite máximo */
     display: block;
 }
-
 
 
