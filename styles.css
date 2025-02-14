@@ -94,17 +94,19 @@ button:hover {
     background-color: #e04a00;
 }
 
-/* Ajuste da logo */
+/* 🔥 Correção definitiva do tamanho da logo 🔥 */
 .logo-container {
     display: flex;
     justify-content: center;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .logo {
-    width: 80px; /* Reduzido para um tamanho adequado */
+    width: 80px; /* TAMANHO FIXO E REDUZIDO */
     height: auto;
     max-width: 100%;
+    display: block;
 }
+
 
 
