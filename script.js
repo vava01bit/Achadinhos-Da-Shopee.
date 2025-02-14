@@ -3,12 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(produtos => {
             const productList = document.getElementById("product-list");
-
             produtos.forEach(produto => {
                 const item = document.createElement("div");
-                item.classList.add("produto");
-                item.setAttribute("data-nome", produto.name.toLowerCase()); // Salva o nome para a busca
-
+                item.classList.add("product");
                 item.innerHTML = `
                     <img src="${produto.imagem}" alt="${produto.name}">
                     <h3>${produto.name}</h3>
@@ -17,25 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
                         <button>Comprar na Shopee</button>
                     </a>
                 `;
-
                 productList.appendChild(item);
             });
         })
         .catch(error => console.error("Erro ao carregar produtos:", error));
 });
 
-// 🔍 Função de busca
 function filtrarProdutos() {
-    let termoBusca = document.getElementById("searchBar").value.toLowerCase();
-    let produtos = document.querySelectorAll(".produto");
+    let input = document.getElementById("searchBar").value.toLowerCase();
+    let produtos = document.querySelectorAll(".product");
 
     produtos.forEach(produto => {
-        let nomeProduto = produto.getAttribute("data-nome");
-        if (nomeProduto.includes(termoBusca)) {
-            produto.style.display = "block"; // Mostra os produtos que combinam
-        } else {
-            produto.style.display = "none"; // Esconde os produtos que não combinam
-        }
+        let nome = produto.querySelector("h3").innerText.toLowerCase();
+        produto.style.display = nome.includes(input) ? "block" : "none";
     });
 }
 
