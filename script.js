@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("produtos.json")
         .then(response => response.json())
         .then(produtos => {
-            const listaDeProdutos = document.getElementById("product-list");
+            const productList = document.getElementById("product-list");
+
             produtos.forEach(produto => {
                 const item = document.createElement("div");
-                item.classList.add("product");
+                item.classList.add("produto");
+                item.setAttribute("data-nome", produto.name.toLowerCase()); // Salva o nome para a busca
+
                 item.innerHTML = `
                     <img src="${produto.imagem}" alt="${produto.name}">
                     <h3>${produto.name}</h3>
@@ -14,21 +17,25 @@ document.addEventListener("DOMContentLoaded", function () {
                         <button>Comprar na Shopee</button>
                     </a>
                 `;
-                listaDeProdutos.appendChild(item);
+
+                productList.appendChild(item);
             });
         })
         .catch(error => console.error("Erro ao carregar produtos:", error));
 });
+
+// 🔍 Função de busca
 function filtrarProdutos() {
-    const termoBusca = document.getElementById("searchBar").value.toLowerCase();
-    const produtos = document.querySelectorAll(".produto");
+    let termoBusca = document.getElementById("searchBar").value.toLowerCase();
+    let produtos = document.querySelectorAll(".produto");
 
     produtos.forEach(produto => {
-        const nomeProduto = produto.querySelector("h3").innerText.toLowerCase();
+        let nomeProduto = produto.getAttribute("data-nome");
         if (nomeProduto.includes(termoBusca)) {
-            produto.style.display = "block";
+            produto.style.display = "block"; // Mostra os produtos que combinam
         } else {
-            produto.style.display = "none";
+            produto.style.display = "none"; // Esconde os produtos que não combinam
         }
     });
 }
+
